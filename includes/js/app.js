@@ -1,6 +1,8 @@
 document.getElementById("loan-form").addEventListener("submit", computeResults);
 
 function computeResults(e) {
+	e.preventDefault();
+	
 	const postAmount = document.getElementById("amount").value;
 	const postInterest = document.getElementById("interest").value;
 	const postYears = document.getElementById("years").value;
@@ -25,9 +27,9 @@ function computeResults(e) {
 	console.log(totalPayment)
 	
 	//show results
-	document.getElementById("monthlyPayment").innerHTML = "Ksh."+monthly;
-	document.getElementById("totalInterest").innerHTML = totalInterest;
+	document.getElementById("monthlyPayment").innerHTML = "Ksh. "+monthly;
+	document.getElementById("totalInterest").innerHTML = "Ksh. "+totalInterest;
 	document.getElementById("totalPayment").innerHTML = "Ksh. "+totalPayment;
 
-	e.preventDefault();
+	
 }

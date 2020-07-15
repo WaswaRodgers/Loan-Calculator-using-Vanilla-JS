@@ -5,5 +5,15 @@ function computeResults(e) {
 	const postInterest = document.getElementById("interest").value;
 	const postYears = document.getElementById("years").value;
 
-	console.log(postAmount, postInterest, postYears)
+	//calculate
+	const principal = parseFloat(postAmount);
+	const interest = parseFloat(postInterest) / 100 / 12;
+	const payment = parseFloat(postYears) * 12;
+	
+
+	console.log(principal)
+	console.log(interest)
+	console.log(payment)
+
+	e.preventDefault();
 }

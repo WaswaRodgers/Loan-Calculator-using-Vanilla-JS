@@ -10,10 +10,11 @@ function computeResults(e) {
 	const interest = parseFloat(postInterest) / 100 / 12;
 	const payment = parseFloat(postYears) * 12;
 	
-
-	console.log(principal)
-	console.log(interest)
-	console.log(payment)
+	//compute monthly payments
+	const x = Math.pow(1 + interest, payment);
+	const monthly = ((principal * x * interest) / (x - 1)).toFixed(2);
+	
+	
 
 	e.preventDefault();
 }

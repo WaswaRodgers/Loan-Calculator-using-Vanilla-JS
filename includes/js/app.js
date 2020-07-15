@@ -26,6 +26,8 @@ function computeResults(e) {
 	
 	//show results
 	document.getElementById("monthlyPayment").innerHTML = "Ksh."+monthly;
+	document.getElementById("totalInterest").innerHTML = totalInterest;
+	document.getElementById("totalPayment").innerHTML = "Ksh."+totalPayment;
 
 	e.preventDefault();
 }

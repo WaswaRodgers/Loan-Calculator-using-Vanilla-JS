@@ -15,9 +15,14 @@ function computeResults(e) {
 	const monthly = ((principal * x * interest) / (x - 1)).toFixed(2);
 	
 
-	//compute interest
+	//compute total interest
 	const totalInterest = (monthly * payment - principal).toFixed(2);
-	console.log(totalInterest)	
+
+	//Compute total payment
+	const totalPayment = (monthly * payment).toFixed(2);
+	
+	//show results
+	
 
 	e.preventDefault();
 }

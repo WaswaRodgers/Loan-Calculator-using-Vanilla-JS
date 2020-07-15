@@ -20,9 +20,12 @@ function computeResults(e) {
 
 	//Compute total payment
 	const totalPayment = (monthly * payment).toFixed(2);
+	console.log(monthly)
+	console.log(totalInterest)
+	console.log(totalPayment)
 	
 	//show results
-	
+	document.getElementById("monthlyPayment").innerHTML = "Ksh."+monthly;
 
 	e.preventDefault();
 }

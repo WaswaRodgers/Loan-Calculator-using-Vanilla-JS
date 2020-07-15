@@ -2,7 +2,7 @@ document.getElementById("loan-form").addEventListener("submit", computeResults);
 
 function computeResults(e) {
 	e.preventDefault();
-	
+
 	const postAmount = document.getElementById("amount").value;
 	const postInterest = document.getElementById("interest").value;
 	const postYears = document.getElementById("years").value;
@@ -22,9 +22,6 @@ function computeResults(e) {
 
 	//Compute total payment
 	const totalPayment = (monthly * payment).toFixed(2);
-	console.log(monthly)
-	console.log(totalInterest)
-	console.log(totalPayment)
 	
 	//show results
 	document.getElementById("monthlyPayment").innerHTML = "Ksh. "+monthly;
